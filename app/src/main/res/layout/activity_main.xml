@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg2" >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg3"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@android:drawable/btn_default"
+                android:onClick="howtoplay"
+                android:text="How To Play"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:id="@+id/aboutus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@android:drawable/btn_default"
+                android:onClick="getinfo"
+                android:text="About Us"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="HIGHSCORE : 0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/yellow"
+            android:textSize="35sp" />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/transparent"
+            android:onClick="play"
+            android:src="@drawable/playbutton"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/transparent"
+            android:onClick="exitgame"
+            android:src="@drawable/exitgame"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
